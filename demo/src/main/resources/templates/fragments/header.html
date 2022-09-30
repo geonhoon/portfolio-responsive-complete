@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th=http://www.thymeleaf.org>
+<link th:href="@{/css/layout.css}" rel="stylesheet">
+
+<div th:fragment="header">
+    <header class="l-header"></header>
+    <nav class="nav bd-grid">
+        <div>
+            <a href="index.html" class="nav__logo">Yongin Secretary</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="todo.html" class="nav__link">Todo</a></li>
+                <li class="nav__item"><a href="board.html" class="nav__link">Board</a></li>
+                <li class="nav__item"><a href="weather.html" class="nav__link">Weather</a></li>
+            </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
+</header>

@@ -1,0 +1,48 @@
+<body>
+<header></header>
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/login.css">
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Please<br>Sign in <span class="home__title-color"><br>Your account</span></h1>
+                    </div>
+                    <div class="home__social">
+                        <a href="" class="home__social-icon"><i class='bx bxl-facebook'></i></a>
+                        <a href="" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
+                        <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    </div>
+
+    
+    <div class="login-wrapper">
+        <h2>Login</h2>
+        <form method="post" action="서버의url" id="login-form">
+            <input type="text" name="userName" placeholder="이메일을 입력해주세요">
+            <input type="password" name="userPassword" placeholder="비밀번호를 입력해주세요">
+            <label for="remember-check">
+                <input type="checkbox" id="remember-check">아이디 저장하기
+            </label>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+
+
+ <!--===== SCROLL REVEAL =====-->
+ <script src="https://unpkg.com/scrollreveal"></script>
+
+ <!--===== MAIN JS =====-->
+ <script src="assets/js/main.js"></script>
+
+ <script>
+     fetch("./header.html")
+         .then((response) => {
+             return response.text();
+         })
+         .then((data) => {
+             document.querySelector("header").innerHTML = data;
+         });  
+ </script>
+</body>
+</html>
